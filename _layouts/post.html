@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+
+	<body class="post">
+		<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		{% include header.html%}
+
+		<section class="post">
+
+				<img src="/img/{{page.image}}" class="post_image" alt="{{posts.title}}">
+			{{ content }}
+			<p class="date">{{ page.date | date: '%B %d, %Y' }}</p>
+		</section>
+
+		<center><section class="post_nav">
+        {% if page.previous.url %}
+        <a class="prev button_small" href="{{page.previous.url}}">
+            <i class="fa fa-arrow-left"></i> Previous post: {{page.previous.title}}
+        </a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="next button_small" href="{{page.next.url}}">
+            Next post: {{page.next.title}} <i class="fa fa-arrow-right"></i>
+        </a>
+        {% endif %}
+		</section></center>
+
+		{% include footer.html%}
+
+	</body>
+</html>

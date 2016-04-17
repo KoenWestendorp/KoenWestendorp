@@ -1,0 +1,19 @@
+# Site settings
+title: Koen Westendorp
+tagline: "Changing the world, one uninspired quote at a time"
+url: "http://yourwebsite.com"
+
+# Social
+socialimg: /img/social.jpg
+twitter: koen__w
+github: KoenWestendorp
+
+# Contact
+email: "koensswestendorp@gmail.com"
+
+# Use this for production
+sass:
+    sass_dir: css
+    
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]

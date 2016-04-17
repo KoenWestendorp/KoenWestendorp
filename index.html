@@ -1,0 +1,28 @@
+---
+layout: default
+title: "Home"
+fulltitle: "Website homepage"
+excerpt: This is the homepage of my website
+---
+<!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
+<!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
+<style>.home{text-decoration: underline;}</style>
+
+{% for posts in site.posts %}
+  <section id="post" class="clearfix">
+		 <img src="img/{{posts.image}}" class="post_image" alt="{{posts.title}}">
+		 <div class="post_text">
+		 	{{ posts.content | truncatewords:70}}
+		 	<p class="date">{{ posts.date | date: '%B %d, %Y' }}</p><a href="{{posts.url}}">Read more...</a>
+		</div>
+	</section>
+{% endfor %}
+
+<section id="contact">
+	<div class="in_contact">
+		<h1>Interested in my work?</h1>
+		<h2>Contact me via</h2>
+		<a href="https://twitter.com/koen__w" class="button"><span class="no_hover">Twitter</span></a>
+		<a href="mailto:koensswestendorp@gmail.com?subject=Contact" class="button"><span class="no_hover">Email</span></a>
+	</div>
+</section>

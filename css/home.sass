@@ -1,0 +1,89 @@
+#post
+  max-height: 500px
+  margin-bottom: 50px
+  .post_image
+    width: 1440px
+    max-width: 50%
+    max-height: 500px
+
+  .post_text
+    width: 40%
+    margin: auto 5% auto 5%
+    position: relative
+    margin-top: auto
+
+    p
+      font-family: 'Lora'
+
+
+    &:nth-child(even)
+      float: left
+
+    &:nth-child(even)
+      float: right
+
+  .date
+    font:
+      size: 0.9rem
+      style: italic
+
+
+
+
+
+
+
+
+
+
+
+#contact
+  background-color: $lightgrey
+  text-align: center
+  min-height: 300px
+
+  div.in_contact
+    padding: 3rem
+    margin-bottom: 0px
+    h1
+      color: $black
+      padding: 1rem auto
+      font-weight: 500
+      line-height: 27px
+
+
+  h2
+    color: $black
+    font-weight: 300
+    margin-top: -1rem
+    margin-bottom: 3.5rem
+
+  a
+    span
+      font-weight: 500
+      transition: all 0.3s ease-in-out
+
+    &:hover
+      color: $white
+      background-color: darken($blue, 10%)
+      opacity: 1
+
+  .button
+    border: none
+    outline: none
+    padding: 1rem 4.5rem
+    border-radius: 2rem
+    background: $blue
+    color: $white
+    margin: 1rem
+
+
+@media only screen and (screen-width: 550px)
+  .button
+    border: none
+    outline: none
+    padding: .8rem 1.4rem
+    border-radius: 2rem
+    background: $blue
+    color: $white
+    margin: 4px

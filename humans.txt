@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+
+
+# THANKS
+
+    <Run The Jewels 2>
+    <Garrett Boatman> -- <Developer> -- <garrettboatman> // CREATOR OF THE EMPTY DIRECTORY SETUP, GITHUBPAGE: https://github.com/garrettboatman/Blank-Theme-Jekyll.git
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JQuery
+    HTML5 Boilerplate
